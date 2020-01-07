@@ -14,6 +14,95 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <header>
+    <nav>
+      <a href="#Home">Home</a>
+      <a href="#About">About</a>
+      <a href="#Portfolio">Portfolio</a>
+      <a href="#Contact">Contact</a>
+    </nav>
+    <div class="header-text">
+      <img>
+      <h1>Joseph D. Paquette - Web Dev</h1>
+      <h3>Part-Time Web Development Student at Lambda school</h3>
+      <hr>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis recusandae ab quaerat, tenetur dolores atque amet aliquam libero eum itaque alias fugit doloribus ad non sapiente sequi sed consectetur quam.</p>
+      <button>Let's Team Up</button>
+    </div>
+  </header>
+  <section class="about">
+    <div class="listen">
+      <h2>Listen Up...</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptates accusantium quaerat! Error rerum pariatur iste suscipit assumenda expedita labore, facere asperiores in nesciunt quibusdam culpa non cupiditate debitis nihil.</p>
+    </div>
+    <div class="stuff">
+      <h2>Stuff I'm Good At:</h2>
+      <li>Disc Golf</li>
+      <li>Coding up UI</li>
+      <li>Playing lots of video games</li>
+      <li>Using bootstrap grid</li>
+      <li>Taking long naps</li>
+    </div>
+    <div class="work">
+      <table>
+        <tr>
+          <th>Years</th>
+          <th>Company</th>
+          <th>Title</th>
+          <th>Tech Used</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Apple</td>
+          <td>Software Engineer</td>
+          <td>Swift</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Microsoft</td>
+          <td>Computer Scientist</td>
+          <td>.net</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Amazon</td>
+          <td>Dev Ops</td>
+          <td>AWS</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+  <section class="contact">
+    <div class="container">
+      <h3>Contact Me:</h3>
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="usa">United States</option>
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="canada">Great Britain</option>
+        </select>
+    
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Leave me a message.." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+      </form>      
+    </div>
+
+
+  </section>
+  <footer>
+    <div>
+      <p>Copyright Awesomeness 2018</p>
+    </div>
+  </footer>
 </body>
 </html>
