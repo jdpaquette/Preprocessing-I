@@ -113,8 +113,9 @@ header {
 			width: 30%;
 		}
 			img {
-				height: 200px;
-				width: 200px;
+				height: 220px;
+				width: 220px;
+				border-radius: 50%;
 			}
 		.right {
 			width: 60%;
@@ -132,7 +133,7 @@ header {
 			}
 			button {
 				text-align: center;
-				height: 30px;
+				height: 40px;
 				width: 150px;
 				border: 2px solid @neutral-brown;
 				border-radius: 15px 50px;
@@ -165,6 +166,7 @@ header {
 		h2 {
 			.padding-small();
 			font-size: 2.25rem;
+			text-align: center;
 		}
 		.listen {
 			width: 45%;
@@ -176,6 +178,7 @@ header {
 				height: 50px;
 				padding-top: 15px;
 				padding-left: 10px;
+				text-align: center;
 			}
 			li:nth-child(even) {
 				background-color: @neutral-cream;
@@ -220,20 +223,20 @@ header {
 }
 #Contact {
 	h3 {
-		.padding-small();
+		padding: 1% 0;
 		font-size: 1.75rem;
 		text-align: center;
 	}
 	p {
-		padding-bottom: 3%;
+		padding-bottom: 2%;
 		text-align: center;
 	}
 	/* Style inputs with type="text", select elements and textareas */
 	input[type=text], input[type=email], textarea {
 		width: 100%; /* Full width */
 		padding: 12px; /* Some padding */ 
-		border: 1px solid #ccc; /* Gray border */
-		border-radius: 4px; /* Rounded borders */
+		border: 1px solid @neutral-brown; /* Gray border */
+		border-radius: 10px; /* Rounded borders */
 		box-sizing: border-box; /* Make sure that padding and width stays in place */
 		margin-top: 6px; /* Add a top margin */
 		margin-bottom: 16px; /* Bottom margin */
@@ -245,6 +248,8 @@ header {
 		background-color: @neutral-cream;
 		color: black;
 		padding: 12px 20px;
+		width: 150px;
+		height: 40px;
 		border: 2px solid @neutral-brown;
 		border-radius: 15px 50px;
 		cursor: pointer;
@@ -259,7 +264,7 @@ header {
 		border-radius: 50px;
 		background-color: @neutral-green;
 		padding: 20px;
-		margin: 5% 0;
+		margin: 2% 0;
 	}
 }
 .footer {
