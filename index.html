@@ -8,6 +8,8 @@
 
   <link rel="stylesheet" href="css/index.css">
 
+  <link rel="stylesheet" href="https://use.typekit.net/jwt2vqo.css">
+
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -15,35 +17,50 @@
 
 <body>
   <header>
-    <nav>
-      <a href="#Home">Home</a>
-      <a href="#About">About</a>
-      <a href="#Portfolio">Portfolio</a>
-      <a href="#Contact">Contact</a>
-    </nav>
+    <div class="navbar">
+      <nav>
+        <a href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#Portfolio">Portfolio</a>
+        <a href="#Contact">Contact</a>
+      </nav>
+    </div>
     <div class="header-text">
-      <img>
-      <h1>Joseph D. Paquette - Web Dev</h1>
-      <h3>Part-Time Web Development Student at Lambda school</h3>
-      <hr>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis recusandae ab quaerat, tenetur dolores atque amet aliquam libero eum itaque alias fugit doloribus ad non sapiente sequi sed consectetur quam.</p>
-      <button>Let's Team Up</button>
+      <div class="image">
+        <img src="Face 200px.png" alt="profile image">
+      </div>
+      <div class="right">
+        <h1>Joseph D. Paquette - Web Dev</h1>
+        <h3>Web Development Student at Lambda school</h3>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis recusandae ab quaerat, tenetur dolores atque amet aliquam libero eum itaque alias fugit doloribus ad non sapiente sequi sed consectetur quam.</p>
+        <button>Let's Team Up</button>
+      </div>
     </div>
   </header>
-  <section class="about">
-    <div class="listen">
-      <h2>Listen Up...</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptates accusantium quaerat! Error rerum pariatur iste suscipit assumenda expedita labore, facere asperiores in nesciunt quibusdam culpa non cupiditate debitis nihil.</p>
+  <section class="one">
+    <div class="center-text">
+      <div class="listen">
+        <h2>Listen Up...</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptates accusantium quaerat! Error rerum pariatur iste suscipit assumenda expedita labore, facere asperiores in nesciunt quibusdam culpa non cupiditate debitis nihil.</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, quaerat sequi nobis quod sapiente placeat aliquam temporibus deserunt magnam inventore dolores quo asperiores soluta. Dolore quam eaque dolores architecto recusandae?</p>
+      </div>
+      <div class="stuff">
+        <h2>Stuff I'm Good At:</h2>
+        <ul class="good-at">
+          <li>Disc Golf</li>
+          <li>Coding up UI</li>
+          <li>Playing lots of video games</li>
+          <li>Using bootstrap grid</li>
+          <li>Taking long naps</li>
+        </ul>
+      </div>
     </div>
-    <div class="stuff">
-      <h2>Stuff I'm Good At:</h2>
-      <li>Disc Golf</li>
-      <li>Coding up UI</li>
-      <li>Playing lots of video games</li>
-      <li>Using bootstrap grid</li>
-      <li>Taking long naps</li>
-    </div>
+  </section>
+  <section class="two">
     <div class="work">
+      <h2>Work History</h2>
       <table>
         <tr>
           <th>Years</th>
@@ -72,36 +89,32 @@
       </table>
     </div>
   </section>
-  <section class="contact">
+  <section id="Contact">
     <div class="container">
       <h3>Contact Me:</h3>
-      <form action="/action_page.php">
+      <p>I would be happy to answer any of you questions. Let's work together.</p>
+      <form action="action_page.php">
+    
         <label for="fname">First Name</label>
         <input type="text" id="fname" name="firstname" placeholder="Your first name..">
     
         <label for="lname">Last Name</label>
         <input type="text" id="lname" name="lastname" placeholder="Your last name..">
     
-        <label for="country">Country</label>
-        <select id="country" name="country">
-          <option value="usa">United States</option>
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="canada">Great Britain</option>
-        </select>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Your email address..">
     
         <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Leave me a message.." style="height:200px"></textarea>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
     
         <input type="submit" value="Submit">
-      </form>      
+    
+      </form>
     </div>
-
-
   </section>
   <footer>
-    <div>
-      <p>Copyright Awesomeness 2018</p>
+    <div class="footer">
+      <p>Copyright Joseph "D" Media, Inc. 2020</p>
     </div>
   </footer>
 </body>

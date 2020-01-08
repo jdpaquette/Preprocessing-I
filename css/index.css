@@ -1,1 +1,356 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.padding-big {
+  padding: 5% 0;
+}
+.padding-small {
+  padding: 2% 0;
+}
+body {
+  font-family: "Roboto Regular", Arial, Helvetica, sans-serif;
+  margin: 0% 5%;
+}
+h1,
+h2,
+h3 {
+  font-family: "Baskerville Display PT Bold", 'Times New Roman', Times, serif;
+}
+header .navbar {
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+header a {
+  text-decoration: none;
+  text-align: center;
+  height: 30px;
+  width: 150px;
+  border: 2px solid #cfb691;
+  border-radius: 15px 50px;
+  background-color: #ffefcf;
+  padding-top: 5px;
+}
+header a:hover {
+  background-color: #E28F41;
+  color: white;
+  cursor: pointer;
+}
+header .header-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0;
+  background-color: #cfdbcb;
+}
+header .header-text .image {
+  width: 30%;
+}
+header .header-text img {
+  height: 200px;
+  width: 200px;
+}
+header .header-text .right {
+  width: 60%;
+}
+header .header-text .right h1,
+header .header-text .right h3,
+header .header-text .right p {
+  padding: 2% 0;
+}
+header .header-text .right h1 {
+  font-size: 2.75rem;
+}
+header .header-text .right h3 {
+  font-size: 1.75rem;
+}
+header .header-text .right hr {
+  border: 2px solid #cfb691;
+}
+header .header-text .right button {
+  text-align: center;
+  height: 30px;
+  width: 150px;
+  border: 2px solid #cfb691;
+  border-radius: 15px 50px;
+  background-color: #ffefcf;
+}
+header .header-text .right button:hover {
+  background-color: #E28F41;
+  color: white;
+  cursor: pointer;
+}
+@media (max-width: 700px) {
+  header .header-text {
+    flex-direction: column;
+  }
+  header .header-text .image {
+    width: 90%;
+    text-align: center;
+  }
+  header .header-text .right {
+    width: 90%;
+  }
+}
+.one .center-text {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 0;
+}
+.one .center-text h2 {
+  padding: 2% 0;
+  font-size: 2.25rem;
+}
+.one .center-text .listen {
+  width: 45%;
+}
+.one .center-text .stuff {
+  width: 45%;
+}
+.one .center-text .stuff li {
+  border: 1px solid #cfb691;
+  height: 50px;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+.one .center-text .stuff li:nth-child(even) {
+  background-color: #ffefcf;
+}
+@media (max-width: 700px) {
+  .one .center-text {
+    flex-direction: column;
+    align-content: center;
+  }
+  .one .center-text .listen {
+    width: 100%;
+  }
+  .one .center-text .stuff {
+    width: 100%;
+  }
+}
+.two .work {
+  padding: 2% 0;
+}
+.two .work h2 {
+  padding: 2% 0;
+  font-size: 2.25rem;
+}
+.two .work table {
+  width: 100%;
+  padding: 0 5%;
+}
+.two .work table th {
+  font-weight: bolder;
+}
+.two .work table td,
+.two .work table th {
+  border: 2px solid #cfb691;
+  text-align: center;
+  padding: 8px;
+}
+.two .work table tr:nth-child(even) {
+  background-color: #ffefcf;
+}
+#Contact {
+  /* Style inputs with type="text", select elements and textareas */
+  /* Style the submit button with a specific background color etc */
+  /* Add a background color and some padding around the form */
+}
+#Contact h3 {
+  padding: 2% 0;
+  font-size: 1.75rem;
+  text-align: center;
+}
+#Contact p {
+  padding-bottom: 3%;
+  text-align: center;
+}
+#Contact input[type=text],
+#Contact input[type=email],
+#Contact textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */;
+}
+#Contact input[type=submit] {
+  background-color: #ffefcf;
+  color: black;
+  padding: 12px 20px;
+  border: 2px solid #cfb691;
+  border-radius: 15px 50px;
+  cursor: pointer;
+}
+#Contact input[type=submit]:hover {
+  background-color: #E28F41;
+  color: white;
+}
+#Contact .container {
+  border-radius: 50px;
+  background-color: #cfdbcb;
+  padding: 20px;
+  margin: 5% 0;
+}
+.footer {
+  height: 6vh;
+  width: 100%;
+  background-color: #cfb691;
+  color: white;
+  text-align: center;
+  padding: 2% 0;
+}
