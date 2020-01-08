@@ -56,4 +56,222 @@ table {
 html, body {
     height: 100%;
 }
+@neutral-brown: #cfb691;
+@neutral-green: #cfdbcb;
+@neutral-cream: #ffefcf;
+@neutral-gray: #b1b3b6;
 
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.padding-big {
+	padding: 5% 0;
+}
+.padding-small {
+	padding: 2% 0;
+}
+body {
+	font-family: "Roboto Regular", Arial, Helvetica, sans-serif;
+	margin: 0% 5%;
+}
+h1, h2, h3 {
+	font-family: "Baskerville Display PT Bold", 'Times New Roman', Times, serif;
+}
+// nav and header section
+header {
+	.navbar	{
+		height: 5vh;
+		.flex-center();
+	}
+		nav {
+			width: 80%;
+			display: flex;
+			justify-content: space-evenly; 
+		}
+			a {
+				text-decoration: none;
+				text-align: center;
+				height: 30px;
+				width: 150px;
+				border: 2px solid @neutral-brown;
+				border-radius: 15px 50px;
+				background-color: @neutral-cream;
+				padding-top: 5px;
+			}
+			a:hover {
+				background-color: #E28F41;
+				color: white;
+				cursor: pointer;
+			}
+	.header-text {
+		.flex-center();
+		.padding-big();
+		background-color: @neutral-green;
+		.image {
+			width: 30%;
+		}
+			img {
+				height: 220px;
+				width: 220px;
+				border-radius: 50%;
+			}
+		.right {
+			width: 60%;
+			h1, h3, p {
+				.padding-small();
+			}
+			h1 {
+				font-size: 2.75rem;
+			}
+			h3 {
+				font-size: 1.75rem;
+			}
+			hr {
+				border: 2px solid @neutral-brown;
+			}
+			button {
+				text-align: center;
+				height: 40px;
+				width: 150px;
+				border: 2px solid @neutral-brown;
+				border-radius: 15px 50px;
+				background-color: @neutral-cream;
+			}
+			button:hover {
+				background-color: #E28F41;
+				color: white;
+				cursor: pointer;
+			}
+		}
+		@media (max-width: 700px) {
+			flex-direction: column;
+			.image {
+				width: 90%;
+				text-align: center;
+			}
+			.right {
+				width: 90%;
+			}
+		}
+	}
+}
+// Section one
+.one {
+	.center-text {
+		display: flex;
+		justify-content: space-between;
+		.padding-small();
+		h2 {
+			.padding-small();
+			font-size: 2.25rem;
+			text-align: center;
+		}
+		.listen {
+			width: 45%;
+		}
+		.stuff {
+			width: 45%;
+			li {
+				border: 1px solid @neutral-brown;
+				height: 50px;
+				padding-top: 15px;
+				padding-left: 10px;
+				text-align: center;
+			}
+			li:nth-child(even) {
+				background-color: @neutral-cream;
+			}
+		}
+		@media (max-width: 700px) {
+			flex-direction: column;
+			align-content: center;
+			.listen {
+				width: 100%;
+			}
+			.stuff {
+				width: 100%;
+			}
+		}
+	}
+}
+// section two - table
+.two {
+	.work {
+		.padding-small();
+		h2 {
+			.padding-small();
+			font-size: 2.25rem;
+		}
+		table{
+			width: 100%;
+			padding: 0 5%;
+			th {
+				font-weight: bolder;
+			}
+			td, th {
+				border: 2px solid @neutral-brown;
+				text-align: center;
+				padding: 8px;
+			}
+			tr:nth-child(even) {
+				background-color: @neutral-cream;
+			}
+		}
+	}
+}
+#Contact {
+	h3 {
+		padding: 1% 0;
+		font-size: 1.75rem;
+		text-align: center;
+	}
+	p {
+		padding-bottom: 2%;
+		text-align: center;
+	}
+	/* Style inputs with type="text", select elements and textareas */
+	input[type=text], input[type=email], textarea {
+		width: 100%; /* Full width */
+		padding: 12px; /* Some padding */ 
+		border: 1px solid @neutral-brown; /* Gray border */
+		border-radius: 10px; /* Rounded borders */
+		box-sizing: border-box; /* Make sure that padding and width stays in place */
+		margin-top: 6px; /* Add a top margin */
+		margin-bottom: 16px; /* Bottom margin */
+		resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+	}
+	
+	/* Style the submit button with a specific background color etc */
+	input[type=submit] {
+		background-color: @neutral-cream;
+		color: black;
+		padding: 12px 20px;
+		width: 150px;
+		height: 40px;
+		border: 2px solid @neutral-brown;
+		border-radius: 15px 50px;
+		cursor: pointer;
+	}
+	input[type=submit]:hover {
+		background-color: #E28F41;
+		color: white;
+	}
+	
+	/* Add a background color and some padding around the form */
+	.container {
+		border-radius: 50px;
+		background-color: @neutral-green;
+		padding: 20px;
+		margin: 2% 0;
+	}
+}
+.footer {
+	height: 6vh;
+	width: 100%;
+	background-color: @neutral-brown;
+	color: white;
+	text-align: center;
+	.padding-small();
+}
